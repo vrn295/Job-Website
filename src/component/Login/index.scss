@@ -1,0 +1,16 @@
+@import "../../style/scss/variable";
+
+.login{
+	height: 70vh;
+	.password-label{
+		display: flex;
+		justify-content: space-between;
+		.forget-password-link{
+			color: $blue-4;
+			font-weight: bold;
+			cursor: pointer;
+			font-size: 0.875rem;
+			text-decoration: none;
+		}
+	}
+}

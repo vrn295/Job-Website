@@ -1,0 +1,215 @@
+@import "../../style/scss/variable";
+
+.posted-job {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: transparent linear-gradient(248deg, $blue-2 0%, #1A253C 100%) no-repeat;
+	background-size: 100vw 8rem;
+	.posted-job-container {
+		align-self: flex-start;
+		.posted-job-home{
+			margin-left: 8vw;
+			margin-bottom: 2rem;
+			display: flex;
+			align-items: center;
+			font-size: 0.75rem;
+			color: $white;
+			text-decoration: none;
+			a{
+				margin-left: 3px;
+			}
+		}
+		h1{
+			font-size: 1.375rem;
+			color: $white;
+			margin-left: 8vw;
+			margin-bottom: 2rem;
+		}
+	}
+	.posted-job-container-2{
+		width: 100vw;
+		height: 22rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		p{
+			margin-bottom: 2.5rem;
+		}
+	}
+	.modal{
+		background: linear-gradient(232deg, #303f607e 0%, #1a253c85 50%);
+		// width: 100vw;
+		height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		// overflow: hidden ;
+		.modal-container{
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 2rem;
+			width: 40vw;
+			background-color: #FFFFFf;
+			box-shadow: 0px 30px 36px #557DA526;
+			border-radius: 20px;
+			z-index: 2;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 0 1.875rem 1.875rem 1.875rem;
+			.header{
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				h2{
+					font-size: 1.188rem;
+				}
+			}
+			.application-count{
+				align-self: flex-start;
+			}
+			.application-container{
+				background-color: #a9afbc36;
+				border-radius: 10px;
+				width: 100%;
+			}
+			.application-container-no-application{
+				height: 70vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.no-application{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					.no-application-icon{
+						font-size: 6rem;
+						opacity: 0.5;
+					}
+				}
+			}
+			.application-container-with-application{
+				padding: 1rem;
+				height: 70vh;
+				overflow-y: scroll;
+			}
+
+			.application-container-with-application::-webkit-scrollbar {
+				width: 0.6rem;
+			  }
+			   
+			.application-container-with-application::-webkit-scrollbar-thumb {
+				background-color: #A9AFBC;
+				border-radius: 10px;
+			}
+			.application-grid{
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				column-gap: 1rem;
+				row-gap: 1rem;
+			}
+			.application{
+				background-color: $white;
+				border: 1px solid #303F6080;
+				border-radius: 5px;
+				display: flex;
+				flex-direction: column;
+				padding: 1rem;
+				.profile{
+					display: flex;
+					align-items: center;
+					.profile-pic{
+						width: 3.5vw;
+						height: 3.5vw;
+						border-radius: 100px;
+						background-color: #D9EFFF;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 1.5vw;
+						margin-right: 1rem;
+					}
+					.user-info .name{
+						font-size: 1rem;
+						font-weight: bold;
+						margin: 0;
+						margin-bottom: 0.5rem;
+					}
+					.email{
+						margin: 0;
+					}
+				}
+				.skills-container{
+					margin-top: 0.5rem;
+					h2{
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+.post-new-job {
+	background: transparent linear-gradient(248deg, $blue-2 0%, #1A253C 100%) no-repeat ;
+	background-size: 100vw 15rem;	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.post-new-job-form{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.poster-job-list{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 1.25vw;
+	row-gap: 1.25vw;
+
+	.job-container{
+		width: 18vw;
+		background-color: $white;
+		border-radius: 10px;
+		padding: 1rem;
+		.job-title{
+			font-size: 1.3rem;
+		}
+		.job-description{
+			font-size: 0.875rem;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 3; /* number of lines to show */
+			-webkit-box-orient: vertical;
+		}
+		.location-btn-container{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.location-container{
+				display: flex;
+				align-items: center;
+				.location-icon{
+					color: $blue-4
+				}
+			}
+			.view-app-btn{
+				background-color: $blue-5;
+				border: none;
+				padding: 0.8rem 1rem;
+				font-size: 0.85rem;
+				border-radius: 5px;
+			}
+		}
+	}
+}

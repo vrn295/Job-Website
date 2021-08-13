@@ -1,0 +1,131 @@
+@import "./style/scss/variable";
+
+.App {
+}
+
+.input-field-container{
+  margin-bottom: 1.875rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field-container label{
+  font-size: 0.875rem;
+  color: $blue-2;
+  margin-bottom: 5px;
+}
+
+.input-field{
+  width: 36vw;
+  padding: 0.938rem 1.063rem;
+  background-color: #E8E8E833;
+  border: 1px solid #C6C6C6;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  color: $blue-2;
+}
+
+.text-area-field{
+  min-width: 36vw;
+  max-width: 36vw;
+  padding: 0.938rem 1.063rem;
+  background-color: #E8E8E833;
+  border: 1px solid #C6C6C6;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  color: $blue-2;
+  font-family: Arial, Helvetica, sans-serif;
+  max-height: 10rem;
+}
+
+.sign-up-container {
+  width: 38vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: $white;
+		padding: 1.875rem;
+		box-shadow: 0px 30px 36px $grey;
+		border-radius: 20px;
+    h1{
+			align-self: flex-start;
+			margin-bottom: 1.813rem;
+		}
+}
+
+.input-field:focus , .text-area-field:focus{
+  outline: none;
+  // border: 1px solid $blue-4;
+  border-color: $blue-4;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: Rubik, sans-serif;
+  background: #EDF6FF;
+  color: #303F60;
+  padding-bottom: 5rem;
+}
+
+.sameLineInput{
+  display: flex;
+  justify-content: space-between;
+  align-self: normal;
+}
+
+.sameLineInput .input-field{
+  width: 16vw;
+}
+
+.validationError{
+  color: #FF0000;
+	font-size: 0.75rem;
+  align-self: flex-end;
+}
+
+.validationErrorInput{
+  border-color: #FF333380;
+}
+
+.btn{
+  background: $blue-4;
+  border: 1px solid $blue-4;
+  border-radius: 5px;
+  padding: 0.813rem 3rem;
+  color: $white;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.btn:hover{
+  transform: scale(1.05)
+}
+
+.pagination{
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  .page-item{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $grey;
+    margin-top: 3rem;
+    cursor: pointer;
+    color: $blue-2;
+  }
+  .selected-page{
+    background-color: $blue-4;
+    color: $white;
+  }
+  .page-item:not(:last-child) {
+    margin-right: 1rem;
+  }
+}

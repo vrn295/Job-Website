@@ -1,0 +1,49 @@
+@import "../../style/scss/variable";
+
+.sign-up{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent linear-gradient(248deg, $blue-2 0%, #1A253C 100%) no-repeat ;
+	background-size: 100vw 15rem;
+	.sign-up-container{
+		h1{
+			align-self: flex-start;
+			margin-bottom: 1.813rem;
+		}
+	}
+	.input-btn-container{
+		display: flex;
+		margin-bottom: 1.875rem;
+		align-self: flex-start;
+		.signup-position{
+			background: #E8E8E833;
+			border: 1px solid #C6C6C6;
+			border-radius: 5px;
+			padding: 0.938rem 1.75rem;
+			margin-right: 1.25rem;
+			cursor: pointer;
+			font-size: 0.875rem;
+			color: $blue-1;
+		}
+		.signup-position-selected{
+			background: $blue-4;
+			color: $white;
+		}
+	}
+	.signup-form{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.signup-already-acc{
+		margin-top: 2.813rem;
+		font-weight: 500;
+		a{
+			color: $blue-4;
+			cursor: pointer;
+			text-decoration: none;
+		}
+	}
+	
+}

@@ -1,0 +1,47 @@
+@import "../../style/scss/variable";
+
+.navbar-container {
+	background: transparent linear-gradient(248deg, var(--unnamed-color-303f60) 0%, $blue-1 100%) 0% 0% no-repeat padding-box;
+	background: transparent linear-gradient(248deg, $blue-2 0%, #1A253C 100%) 0% 0% no-repeat padding-box;
+	padding: 1rem 4.375rem;
+	.navbar-sub-container{
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.navbar-logo {
+		text-decoration: none;
+		font-size: 1.375rem;
+		color: $white;
+		span{
+			color: $blue-4;
+		}
+	}
+	.navbar-login-btn{
+		width: 9.25rem;
+		height: 2.875rem;
+		border: 1px solid var(--unnamed-color-43afff);
+		background: $blue-5 0% 0% no-repeat padding-box;
+		border: 1px solid $blue-4;
+		border-radius: 5px;
+		font-size: 1rem;
+		color: $white;
+		font-weight: 500;
+		cursor: pointer;
+	}
+	.nav-post-job{
+		text-decoration: none;
+		color: white;
+		margin-right: 3rem;
+	}
+	.nav-post-highlight{
+		border-bottom: 3px solid $blue-4;
+	}
+	hr{
+		margin: 0;
+		margin-top: 1rem;
+		background: $white 0% 0% no-repeat padding-box;
+		opacity: 0.5;
+	}
+}
