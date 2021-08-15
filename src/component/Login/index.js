@@ -2,7 +2,7 @@ import React from 'react'
 import "./index.scss"
 import { Formik, Form, Field } from 'formik';
 import * as Yup from "yup";
-import {BASE_URL, login} from "../utils"
+import {login} from "../utils"
 import { Link, useHistory } from 'react-router-dom';
 
 
