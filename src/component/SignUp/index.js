@@ -141,7 +141,7 @@ class SignUp extends Component {
 										onChange={handleChange} 
 										value={values.confirmPassword}
 									/>
-									<span className="validationError">{(errors.confirmPassword && touched.confirmPassword && errors.confirmPassword) || this.state.passwordError && "Password should be same." }</span>
+									<span className="validationError">{((errors.confirmPassword && touched.confirmPassword && errors.confirmPassword) || this.state.passwordError) && "Password should be same." }</span>
 								</div>
 							</div>
 							<div className="input-field-container">
@@ -163,7 +163,7 @@ class SignUp extends Component {
 					</Formik>
 					<p className="signup-already-acc">Have an account? 
 						<Link to="/login">
-							<a> Login</a>
+							<span> Login</span>
 						</Link>
 					</p>
 				</div>

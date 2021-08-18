@@ -57,7 +57,7 @@ const PostJob = () => {
 					<div className="posted-job-container">
 						<Link to="/" className="posted-job-home">
 							<HomeIcon style={{fontSize: "1.2rem"}}/>
-							<a>Home</a>
+							<span>Home</span>
 						</Link>
 						<h1>Jobs posted by you</h1>
 					</div>

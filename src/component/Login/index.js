@@ -70,7 +70,7 @@ const PostedJob = ({
 					</Formik>
 					<p className="signup-already-acc">New to MyJobs? 
 						<Link to="/sign-up">
-							<a> Create an account</a>
+							<span> Create an account</span>
 						</Link> 
 					</p>
 			</div>

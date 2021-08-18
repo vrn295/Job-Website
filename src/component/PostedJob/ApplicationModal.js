@@ -8,7 +8,7 @@ const ApplicationModal = ({
 	close
 }) => {
 	const [applications, setApplications] = useState([])
-	useEffect(() => {
+	useEffect((appId) => {
 		axios.get(`${BASE_URL}recruiters/jobs/${appId}/candidates`, {
 			headers: {
 				"Authorization": AUTH_TOKEN()
