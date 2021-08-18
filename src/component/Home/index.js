@@ -3,6 +3,28 @@ import { Link } from 'react-router-dom'
 import { isLogin } from '../utils'
 import "./index.scss"
 export default function index() {
+	const trustedCompanies = [
+		{
+			name: "Goldcar",
+			src: "/Goldcar.svg",
+		},
+		{
+			name: "Gocanvas",
+			src: "/Gocanvas.svg",
+		},
+		{
+			name: "Netflix",
+			src: "/Netflix.png",
+		},
+		{
+			name: "Tokopedia",
+			src: "/Tokopedia.png",
+		},
+		{
+			name: "Zoom",
+			src: "/Zoom.png",
+		},
+	]
 	return (
 		<div className="home-container">
 			<div className="home-container-1">
@@ -24,6 +46,14 @@ export default function index() {
 					<div>
 						<h2>Verify their abilities</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+					</div>
+				</div>
+				<div className="trusted-companies">
+					<h2>Companies Who Trust Us</h2>
+					<div className="trusted-companies-grid">
+						{trustedCompanies.map((item) => 
+							<img className="trusted-companies-img" src={`images/Trusted-Companies${item.src}`} alt={item.name} />
+						)}
 					</div>
 				</div>
 			</div>

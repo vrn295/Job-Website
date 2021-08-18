@@ -45,6 +45,22 @@
 		text-decoration: none;
 		transition: transform .2s;
 	}
+	.trusted-companies{
+		margin-top: 3rem;
+		align-self: flex-start;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.trusted-companies-grid{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.trusted-companies-img{
+		width: 10vw;
+		margin-right: 4vw;
+	}
 	.home-container-1-btn:hover{
 		transform: scale(1.05)
 	  }

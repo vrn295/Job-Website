@@ -43,10 +43,13 @@
 		background: linear-gradient(232deg, #303f607e 0%, #1a253c85 50%);
 		// width: 100vw;
 		height: 100%;
-		position: absolute;
+		position: fixed;
 		top: 0px;
 		left: 0px;
 		right: 0px;
+		.close-icon{
+			cursor: pointer;
+		}
 		// overflow: hidden ;
 		.modal-container{
 			margin-left: auto;
@@ -209,6 +212,7 @@
 				padding: 0.8rem 1rem;
 				font-size: 0.85rem;
 				border-radius: 5px;
+				cursor: pointer;
 			}
 		}
 	}
